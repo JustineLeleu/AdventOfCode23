@@ -4,8 +4,29 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class Day1Puzzle1
+public class Day1Puzzle2
 {
+    public enum Numbers
+    {
+        ONE("o1e", "one"),
+        TWO("t2o", "two"),
+        THREE("t3e", "three"),
+        FOUR("f4r", "four"),
+        FIVE("f5e", "five"),
+        SIX("s6x", "six"),
+        SEVEN("s7n", "seven"),
+        EIGHT("e8t", "eight"),
+        NINE("n9e", "nine");
+
+        final String num;
+        final String stringNum;
+
+        Numbers(String num, String stringNum)
+        {
+            this.num = num;
+            this.stringNum = stringNum;
+        }
+    }
     static List<Integer> createList()
     {
         List<Integer> list;
@@ -22,7 +43,11 @@ public class Day1Puzzle1
         return list;
     }
 
-    private static Function<String, Integer> mapToItem = (line) -> {
+    private static final Function<String, Integer> mapToItem = (line) -> {
+        for (Numbers value : Numbers.values())
+        {
+            line = line.replace(value.stringNum, value.num);
+        }
 
         char[] arr = line.toCharArray();
         ArrayList<Character> nums = new ArrayList<>();
@@ -49,12 +74,11 @@ public class Day1Puzzle1
 
         return result;
     }
-
-    public static void main(String[] args)
+    public static void main (String[] args)
     {
         List<Integer> list = createList();
         int sum = sum(list);
-        System.out.println("Liste: " + list);
+        System.out.println("List: " + list);
         System.out.println("Sum: " + sum);
     }
 }
