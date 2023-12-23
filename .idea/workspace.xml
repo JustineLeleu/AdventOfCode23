@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5627d277-c43c-4404-9c04-f8fc178cfea9" name="Changes" comment="day 2">
-      <change afterPath="$PROJECT_DIR$/src/Day3Puzzle1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/puzzle3.text" afterDir="false" />
+    <list default="true" id="5627d277-c43c-4404-9c04-f8fc178cfea9" name="Changes" comment="day 3 part 1">
+      <change afterPath="$PROJECT_DIR$/src/Day3Puzzle2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/puzzle3.text" beforeDir="false" afterPath="$PROJECT_DIR$/src/puzzle3.text" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +61,12 @@
       <workItem from="1701437410558" duration="6716000" />
       <workItem from="1701597266855" duration="4800000" />
       <workItem from="1701683104224" duration="890000" />
-      <workItem from="1701712093800" duration="9830000" />
+      <workItem from="1701712093800" duration="10022000" />
+      <workItem from="1701763272791" duration="212000" />
+      <workItem from="1703162711575" duration="1433000" />
+      <workItem from="1703255563673" duration="1306000" />
+      <workItem from="1703325402268" duration="1328000" />
+      <workItem from="1703349829591" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <option name="closed" value="true" />
@@ -72,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701610446472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day 3 part 1">
+      <option name="closed" value="true" />
+      <created>1701722596284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701722596284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,7 +101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day 1" />
     <MESSAGE value="day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 2" />
+    <MESSAGE value="day 3 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 3 part 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
