@@ -12,16 +12,7 @@ public class Day4Puzzle1 {
                     .collect(Collectors.toList());
 
             for (String line : lines){
-                String[] winners = line.substring(8).split("\\|")[0].split("(?<=[0-9])\\s");
-                String numbers = line.split("\\|")[1].replaceAll("(?<=[0-9])\\s", ".");
-                int result = 0;
-
-                for (String winner : winners){
-                    if (numbers.contains(winner))
-                    {
-                        result = (result == 0) ? 1 : result * 2;
-                    }
-                }
+                int result = getResult(line);
                 if (result != 0) results.add(result);
             }
         }
@@ -39,5 +30,19 @@ public class Day4Puzzle1 {
         }
 
         System.out.println(sum);
+    }
+
+    private static int getResult(String line) {
+        String[] winners = line.substring(10).split("\\|")[0].split("(?<=[0-9])\\s");
+        String numbers = line.split("\\|")[1].substring(1).replaceAll("(?<=[0-9])\\s", ".");
+        int result = 0;
+
+        for (String winner : winners){
+            if (numbers.contains(winner))
+            {
+                result = (result == 0) ? 1 : result * 2;
+            }
+        }
+        return result;
     }
 }
