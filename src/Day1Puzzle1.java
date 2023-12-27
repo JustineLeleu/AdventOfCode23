@@ -9,7 +9,7 @@ public class Day1Puzzle1
     static List<Integer> createList()
     {
         List<Integer> list;
-        try(InputStream inputFS = new FileInputStream("src/puzzle1.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle1.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             list = br.lines()
                     .map(mapToItem)

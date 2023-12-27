@@ -20,7 +20,7 @@ public class Day3Puzzle1
         ArrayList<String> lines;
         ArrayList<Integer> nums = new ArrayList<>();
 
-        try(InputStream inputFS = new FileInputStream("src/puzzle3.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle3.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             lines = (ArrayList<String>) br.lines()
                     .collect(Collectors.toList());

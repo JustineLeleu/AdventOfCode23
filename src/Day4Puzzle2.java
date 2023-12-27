@@ -7,7 +7,7 @@ public class Day4Puzzle2 {
         ArrayList<Card> cards;
         long sum = 0;
 
-        try(InputStream inputFS = new FileInputStream("src/puzzle4.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle4.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             cards = (ArrayList<Card>) br.lines()
                     .map(Card::new)

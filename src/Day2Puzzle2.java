@@ -11,7 +11,7 @@ public class Day2Puzzle2
     static List<Integer> getMinSetPow()
     {
         List<Integer> list;
-        try(InputStream inputFS = new FileInputStream("src/puzzle2.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle2.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             list = br.lines()
                     .map(mapToItem)

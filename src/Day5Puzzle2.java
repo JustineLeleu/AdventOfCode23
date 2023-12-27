@@ -1,9 +1,8 @@
 import java.io.*;
-import java.sql.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Day5Puzzle1 {
+public class Day5Puzzle2 {
     public static void main(String[] args){
         long[] seeds;
         Map<Integer, List<long[]>> maps = new HashMap<>();
@@ -12,9 +11,9 @@ public class Day5Puzzle1 {
         try(InputStream inputFS = new FileInputStream("src/inputs/puzzle5.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             seeds = Arrays.stream(br.readLine()
-                    .split(":")[1]
-                    .substring(1)
-                    .split("\\s"))
+                            .split(":")[1]
+                            .substring(1)
+                            .split("\\s"))
                     .mapToLong(Long::parseLong)
                     .toArray();
             lines = br.lines()
@@ -26,6 +25,8 @@ public class Day5Puzzle1 {
         {
             throw new RuntimeException(e);
         }
+
+        System.out.println(Arrays.toString(seeds));
 
         List<long[]> numbers = new ArrayList<>();
         int key = 0;
@@ -45,26 +46,26 @@ public class Day5Puzzle1 {
             numbers.add(nums);
         }
 
-        long[] locations = new long[seeds.length];
-        for (int i = 0; i < seeds.length; i++)
-        {
-            long source = seeds[i];
-            for (List<long[]> map : maps.values()){
-                for (long[] ranges : map){
-                    if (source >= ranges[1] && source <= ranges[1] + ranges[2]){
-                        source = ranges[0] + (source - ranges[1]);
-                        break;
+        long loc = -1;
+
+        for (int i = 0; i < seeds.length/2; i++){
+            for (int j = 0; j < seeds[i+1]; j++){
+                long source = seeds[i] + j;
+                System.out.println(source);
+                for (List<long[]> map : maps.values()) {
+                    for (long[] ranges : map) {
+                        if (source >= ranges[1] && source <= ranges[1] + ranges[2]) {
+                            source = ranges[0] + (source - ranges[1]);
+                            break;
+                        }
                     }
                 }
+                if (loc == -1) loc = source;
+                else if (source < loc) loc = source;
             }
-            locations[i] = source;
+            i++;
         }
 
-        System.out.println(Arrays.toString(locations));
-        long lowest = locations[0];
-        for (long loc : locations){
-            if (loc < lowest) lowest = loc;
-        }
-        System.out.println(lowest);
+        System.out.println(loc);
     }
 }

@@ -24,7 +24,7 @@ public class Day2Puzzle1
     static List<Integer> getPossibleGames()
     {
         List<Integer> list;
-        try(InputStream inputFS = new FileInputStream("src/puzzle2.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle2.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             list = br.lines()
                     .map(mapToItem)

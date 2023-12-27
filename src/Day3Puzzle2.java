@@ -9,7 +9,7 @@ public class Day3Puzzle2 {
         ArrayList<Integer> validNums = new ArrayList<>();
         Map<String, LinkedList<Integer>> stars = new HashMap<>();
 
-        try(InputStream inputFS = new FileInputStream("src/puzzle3.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle3.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             lines = (ArrayList<String>) br.lines()
                     .collect(Collectors.toList());

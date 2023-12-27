@@ -6,7 +6,7 @@ public class Day4Puzzle1 {
     public static void main(String[] args){
         ArrayList<String> lines;
         List<Integer> results = new LinkedList<>();
-        try(InputStream inputFS = new FileInputStream("src/puzzle4.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
+        try(InputStream inputFS = new FileInputStream("src/inputs/puzzle4.text"); BufferedReader br = new BufferedReader(new InputStreamReader(inputFS)))
         {
             lines = (ArrayList<String>) br.lines()
                     .collect(Collectors.toList());
