@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5627d277-c43c-4404-9c04-f8fc178cfea9" name="Changes" comment="day 5 part 1">
-      <change afterPath="$PROJECT_DIR$/src/Day5Puzzle2.java" afterDir="false" />
+    <list default="true" id="5627d277-c43c-4404-9c04-f8fc178cfea9" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/inputs/puzzle5.text" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +71,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BeCode\java\Extras\AdventOfCode23\src\inputs" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -99,7 +105,7 @@
       <workItem from="1703351461746" duration="672000" />
       <workItem from="1703358903274" duration="163000" />
       <workItem from="1703604935551" duration="4150000" />
-      <workItem from="1703665521626" duration="20764000" />
+      <workItem from="1703665521626" duration="21286000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <option name="closed" value="true" />
@@ -165,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703690407933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <option name="closed" value="true" />
+      <created>1703695071223</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703695071223</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix">
+      <option name="closed" value="true" />
+      <created>1703695127320</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703695127320</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +201,8 @@
     <MESSAGE value="day 4 part 1" />
     <MESSAGE value="day 4 part 2" />
     <MESSAGE value="day 5 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 5 part 1" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
